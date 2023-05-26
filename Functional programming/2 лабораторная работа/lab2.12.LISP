@@ -1,0 +1,7 @@
+((lambda (ls)
+   (let ((a (first ls))
+         (b (second ls))
+         (c (first (reverse ls))))
+     (list (+ a b c)
+           (+ (/ 1 a) (/ 1 b) (/ 1 c))
+           (+ (/ 1 a) (/ 1 (+ b c)))))) '(1 2 3))
